@@ -37,11 +37,6 @@ class students extends \yii\db\ActiveRecord
         ];
     }
 
-
-	public function getFio()
-	{
-		return $this->sur_name . ' ' . $this->name;
-	}
     /**
      * @inheritdoc
      */
