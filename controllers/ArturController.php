@@ -45,7 +45,7 @@ class ArturController extends Controller
 
         // find создания объекта запроса all получение данных в виде объектов
 
-        // $countries = Artur::find()->all(); //SELECT * FROM `users`
+        $countries = Artur::find()->all(); //SELECT * FROM `users`
         //$countries = Artur::find()->orderBy(['id' => SORT_DESC])->all();   //SELECT * FROM `users` ORDER BY `id` DESC
         //$countries = Artur::find()->asArray()->all();
 
@@ -57,7 +57,7 @@ class ArturController extends Controller
         #   OR И AND
 
         //$countries = Artur::find()->orderBy(['id' => SORT_DESC])->where(['>=','age','19'])->orWhere(['<=','age','22'])->all();
-        $countries = Artur::find()->orderBy(['id' => SORT_DESC])->where(['>=','age','19'])->andWhere(['<=','age','22'])->all();
+        //$countries = Artur::find()->orderBy(['id' => SORT_DESC])->where(['>=','age','19'])->andWhere(['<=','age','22'])->all();
 
         #SELECT * FROM `country` WHERE `code`='US'
         //$countries = Artur::find()->asArray()->where(['code'=> 'US'])->all();
